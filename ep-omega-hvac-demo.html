@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.P. Omega Air Conditioning LLC | El Paso, TX HVAC</title>
+  <meta name="description" content="E.P. Omega Air Conditioning LLC — Trane Top Comfort Specialist 3 consecutive years, BBB A+, Diamond CCE Dealer. 44+ combined years. El Paso TX HVAC. (915) 703-7351.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HVACBusiness","name":"E.P. Omega Air Conditioning LLC","telephone":"(915) 703-7351","address":{"@type":"PostalAddress","streetAddress":"13770 Nayarit Dr","addressLocality":"El Paso","addressRegion":"TX","postalCode":"79928","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"12:00"}],"sameAs":["https://www.facebook.com/epomegaac"],"areaServed":"El Paso, TX"}
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0a1520;
+      --blue:#1a3d5c;
+      --blue2:#152d44;
+      --orange:#e8734a;
+      --orange2:#cf5e39;
+      --white:#ffffff;
+      --cream:#f4f0e8;
+      --mist:#e0dbd1;
+      --fog:#697888;
+      --text:#1a2535;
+      --bh:38px;
+      --hh:68px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--text);-webkit-font-smoothing:antialiased;padding-top:calc(var(--bh) + var(--hh))}
+    h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif}
+    a{text-decoration:none;color:inherit}
+
+    /* ── DEMO BANNER ── */
+    .demo-banner{
+      position:fixed;top:0;left:0;right:0;z-index:1000;
+      height:var(--bh);background:#050d14;
+      color:#FFD700;font-size:10.5px;font-weight:600;
+      letter-spacing:.1em;text-transform:uppercase;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:0 12px;gap:8px;
+    }
+
+    /* ── HEADER ── */
+    .site-header{
+      position:fixed;top:var(--bh);left:0;right:0;z-index:999;
+      height:var(--hh);background:var(--ink);
+      border-bottom:1px solid rgba(255,255,255,.07);
+      display:flex;align-items:center;
+      transition:box-shadow .3s;
+    }
+    .site-header.scrolled{box-shadow:0 4px 28px rgba(0,0,0,.5)}
+    .hdr{max-width:1280px;margin:0 auto;padding:0 28px;width:100%;display:flex;align-items:center;gap:20px}
+    .hdr-logo{flex:1}
+    .hdr-logo-name{font-size:15px;font-weight:800;color:var(--white);letter-spacing:-.02em;display:block;line-height:1.1}
+    .hdr-logo-sub{font-size:10px;font-weight:500;color:rgba(255,255,255,.35);letter-spacing:.06em;text-transform:uppercase}
+    .hdr-nap{display:none;flex-direction:column;gap:1px}
+    .hdr-addr{font-size:11px;color:rgba(255,255,255,.3);font-weight:500}
+    .hdr-phone{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:var(--orange);letter-spacing:-.02em;line-height:1}
+    .hdr-cta{
+      display:inline-flex;align-items:center;gap:8px;
+      background:var(--orange);color:var(--white);
+      padding:10px 20px;
+      font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.02em;
+      transition:background .2s,transform .2s;white-space:nowrap;
+    }
+    .hdr-cta:hover{background:var(--orange2);transform:translateY(-1px)}
+
+    /* ── HERO ── */
+    .hero{
+      background:var(--ink);
+      display:grid;grid-template-columns:1fr;
+      min-height:calc(90vh - var(--bh) - var(--hh));
+    }
+    .hero-l{padding:72px 28px;display:flex;flex-direction:column;justify-content:center}
+    .hero-l-in{max-width:660px}
+    .hero-eyebrow{
+      display:flex;align-items:center;gap:10px;
+      font-size:10.5px;font-weight:600;letter-spacing:.16em;
+      text-transform:uppercase;color:rgba(255,255,255,.38);
+      margin-bottom:24px;
+    }
+    .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--orange);display:inline-block;flex-shrink:0}
+    .hero h1{
+      font-size:clamp(36px,6vw,66px);font-weight:800;
+      color:var(--white);line-height:1.04;letter-spacing:-.03em;
+      margin-bottom:24px;
+    }
+    .hero h1 em{color:var(--orange);font-style:normal}
+    .hero-sub{font-size:16px;color:rgba(255,255,255,.52);line-height:1.72;max-width:520px;margin-bottom:40px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px}
+    .btn-primary{
+      display:inline-flex;align-items:center;gap:9px;
+      background:var(--orange);color:var(--white);
+      padding:14px 28px;
+      font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;
+      border:none;cursor:pointer;
+      transition:background .2s,transform .2s,box-shadow .2s;
+    }
+    .btn-primary:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,115,74,.35)}
+    .btn-ghost{
+      display:inline-flex;align-items:center;gap:9px;
+      background:transparent;color:var(--white);
+      border:1px solid rgba(255,255,255,.22);
+      padding:13px 26px;
+      font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;
+      transition:border-color .2s,transform .2s;
+    }
+    .btn-ghost:hover{border-color:rgba(255,255,255,.7);transform:translateY(-2px)}
+    .hero-trust{display:flex;flex-wrap:wrap;gap:10px 0}
+    .h-badge{
+      font-size:10.5px;font-weight:600;letter-spacing:.05em;
+      color:rgba(255,255,255,.42);
+      padding-right:14px;margin-right:14px;
+      border-right:1px solid rgba(255,255,255,.12);
+      line-height:1;
+    }
+    .h-badge:last-child{border-right:none}
+
+    /* Hero right panel */
+    .hero-r{
+      background:var(--blue2);padding:52px 28px;
+      display:flex;flex-direction:column;justify-content:center;gap:22px;
+      border-left:1px solid rgba(255,255,255,.05);
+    }
+    .hr-lbl{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:5px}
+    .hr-phone{
+      font-family:'Poppins',sans-serif;
+      font-size:clamp(28px,4.5vw,42px);font-weight:800;
+      color:var(--orange);letter-spacing:-.03em;line-height:1;display:block;
+      transition:color .2s;
+    }
+    .hr-phone:hover{color:#f09070}
+    .hr-div{height:1px;background:rgba(255,255,255,.07)}
+    .hr-hours{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .hr-h .hl{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+    .hr-h .hv{font-size:13px;font-weight:600;color:rgba(255,255,255,.78)}
+    .hr-emg{
+      display:flex;align-items:center;gap:10px;
+      background:rgba(232,115,74,.1);border:1px solid rgba(232,115,74,.22);
+      padding:12px 14px;
+    }
+    .hr-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0;animation:blink 1.8s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+    .hr-emg p{font-size:12.5px;font-weight:600;color:rgba(255,255,255,.78);line-height:1.42}
+
+    /* ── TICKER ── */
+    .ticker{overflow:hidden;background:var(--blue);padding:11px 0;border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}
+    .ticker-track{display:flex;animation:tick 34s linear infinite;white-space:nowrap}
+    .ticker-track:hover{animation-play-state:paused}
+    .tick-item{display:inline-flex;align-items:center;gap:10px;padding:0 36px;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.42);white-space:nowrap}
+    .tick-dot{color:var(--orange);font-size:16px;line-height:1}
+    @keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* ── SECTION SHELL ── */
+    .wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+    .sec-label{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+    .sec-label::before{content:'';width:22px;height:1px;background:var(--orange);display:inline-block;flex-shrink:0}
+    .sec-title{font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--blue);line-height:1.12;letter-spacing:-.025em}
+
+    /* ── SERVICES ACCORDION ── */
+    .services-sec{background:var(--cream);padding:88px 0}
+    .svc-hd{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:52px}
+    .svc-hd-sub{font-size:14px;color:var(--fog);line-height:1.68;max-width:300px}
+    .svc-list{border-top:1px solid var(--mist)}
+    .svc-item{border-bottom:1px solid var(--mist);position:relative}
+    .svc-item::before{
+      content:'';position:absolute;
+      left:0;top:0;width:3px;height:0;
+      background:var(--orange);
+      transition:height .35s ease;
+    }
+    .svc-item:hover::before{height:100%}
+    .svc-btn{
+      width:100%;text-align:left;background:none;border:none;cursor:pointer;
+      padding:26px 8px 26px 20px;
+      display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .svc-btn-l{display:flex;align-items:center;gap:20px}
+    .svc-num{font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;color:var(--orange);letter-spacing:.06em;min-width:24px}
+    .svc-name{
+      font-family:'Poppins',sans-serif;
+      font-size:clamp(17px,2.2vw,21px);font-weight:700;
+      color:var(--blue);letter-spacing:-.01em;
+      transition:color .2s;
+    }
+    .svc-btn:hover .svc-name{color:var(--orange)}
+    .svc-chevron{
+      width:28px;height:28px;flex-shrink:0;
+      border:1px solid var(--mist);border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      transition:transform .3s,background .2s,border-color .2s;
+    }
+    .svc-chevron svg{width:13px;height:13px;stroke:var(--fog);transition:stroke .2s}
+    .svc-item.open .svc-chevron{transform:rotate(180deg);background:var(--orange);border-color:var(--orange)}
+    .svc-item.open .svc-chevron svg{stroke:var(--white)}
+    .svc-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+    .svc-item.open .svc-body{max-height:160px}
+    .svc-desc{font-size:14.5px;color:var(--fog);line-height:1.7;padding:0 20px 26px 44px;max-width:660px}
+
+    /* ── AWARDS ── */
+    .awards-sec{background:var(--blue2);padding:88px 0}
+    .awards-sec .sec-label{color:rgba(232,115,74,.85)}
+    .awards-sec .sec-label::before{background:rgba(232,115,74,.85)}
+    .awards-sec .sec-title{color:var(--white)}
+    .awards-top{margin-bottom:52px}
+    .awards-grid{display:grid;grid-template-columns:1fr;border:1px solid rgba(255,255,255,.07)}
+    .aw-item{
+      padding:36px 32px;
+      border-bottom:1px solid rgba(255,255,255,.07);
+      position:relative;cursor:default;
+      transition:background .25s;overflow:hidden;
+    }
+    .aw-item:last-child{border-bottom:none}
+    .aw-item::before{
+      content:'';position:absolute;
+      top:0;left:0;right:0;height:3px;
+      background:var(--orange);
+      transform:scaleX(0);transform-origin:left;
+      transition:transform .35s ease;
+    }
+    .aw-item:hover::before{transform:scaleX(1)}
+    .aw-item:hover{background:rgba(255,255,255,.03)}
+    .aw-idx{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:16px}
+    .aw-name{font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:var(--white);line-height:1.28;margin-bottom:10px;letter-spacing:-.01em}
+    .aw-body{font-size:13px;color:rgba(255,255,255,.42);line-height:1.65;margin-bottom:16px}
+    .aw-pill{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);border:1px solid rgba(232,115,74,.28);padding:3px 9px;display:inline-block}
+
+    /* ── ABOUT ── */
+    .about-sec{background:var(--white);padding:88px 0}
+    .about-grid{display:grid;grid-template-columns:1fr;gap:56px}
+    .big-n{
+      font-family:'Poppins',sans-serif;
+      font-size:clamp(100px,20vw,180px);font-weight:800;
+      color:var(--cream);line-height:.85;letter-spacing:-.04em;
+      display:block;user-select:none;
+    }
+    .big-n-lbl{font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.12em;text-transform:uppercase;margin-top:12px}
+    .big-n-sub{font-size:12px;color:var(--fog);margin-top:3px}
+    .num-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;padding-top:26px;border-top:1px solid var(--mist)}
+    .ns-v{font-family:'Poppins',sans-serif;font-size:28px;font-weight:800;color:var(--blue);line-height:1;letter-spacing:-.02em}
+    .ns-l{font-size:11.5px;color:var(--fog);font-weight:500;margin-top:4px;line-height:1.35}
+    .owner-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .owner-chip{display:flex;align-items:center;gap:12px;background:var(--cream);padding:10px 14px;border:1px solid var(--mist);flex:1 1 180px}
+    .oc-av{width:40px;height:40px;border-radius:50%;background:var(--blue);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:13px;font-weight:800;color:var(--white)}
+    .oc-info strong{display:block;font-size:13px;font-weight:600;color:var(--text)}
+    .oc-info span{font-size:11.5px;color:var(--fog)}
+    .about-text p{font-size:15.5px;color:var(--fog);line-height:1.78;margin-bottom:18px}
+    .about-text p strong{color:var(--text);font-weight:600}
+    .about-quote{border-left:3px solid var(--orange);padding:18px 22px;background:var(--cream);margin-top:28px}
+    .about-quote p{font-size:15px;color:var(--blue);font-style:italic;line-height:1.65;margin-bottom:10px}
+    .about-quote cite{font-size:12px;font-weight:600;color:var(--orange);font-style:normal}
+
+    /* ── TESTIMONIALS ── */
+    .t-sec{background:var(--ink);padding:88px 0;overflow:hidden}
+    .t-sec .sec-label{color:rgba(232,115,74,.8)}
+    .t-sec .sec-label::before{background:rgba(232,115,74,.8)}
+    .t-sec .sec-title{color:var(--white)}
+    .t-hd{margin-bottom:52px}
+    .t-slider{position:relative;min-height:240px}
+    .t-slide{position:absolute;top:0;left:0;right:0;opacity:0;transition:opacity .6s ease;pointer-events:none}
+    .t-slide.active{opacity:1;position:relative;pointer-events:auto}
+    .t-qmark{font-family:'Poppins',sans-serif;font-size:72px;font-weight:800;color:var(--orange);line-height:.7;display:block;margin-bottom:12px;opacity:.35}
+    .t-stars{color:#f5c518;font-size:15px;letter-spacing:3px;margin-bottom:14px}
+    .t-text{
+      font-family:'Poppins',sans-serif;
+      font-size:clamp(18px,2.8vw,24px);font-weight:600;
+      color:var(--white);line-height:1.5;letter-spacing:-.01em;
+      font-style:italic;max-width:820px;margin-bottom:24px;
+    }
+    .t-attr{font-size:13px;font-weight:600;color:rgba(255,255,255,.45)}
+    .t-attr span{color:var(--orange)}
+    .t-dots{display:flex;gap:8px;margin-top:36px}
+    .t-dot{width:24px;height:3px;background:rgba(255,255,255,.12);cursor:pointer;transition:background .3s,width .3s}
+    .t-dot.active{background:var(--orange);width:40px}
+
+    /* ── COVERAGE ── */
+    .cov-sec{background:var(--cream);padding:72px 0}
+    .cov-inner{display:grid;grid-template-columns:1fr;gap:36px}
+    .cov-text h2{font-size:clamp(24px,3.5vw,36px);font-weight:700;color:var(--blue);letter-spacing:-.02em;line-height:1.2;margin-bottom:12px}
+    .cov-text p{font-size:14px;color:var(--fog);line-height:1.7}
+    .cov-tags{display:flex;flex-wrap:wrap;gap:8px}
+    .cov-tag{font-size:12.5px;font-weight:500;color:var(--blue);border:1px solid var(--mist);padding:7px 14px;transition:border-color .2s,color .2s,background .2s;cursor:default}
+    .cov-tag:hover{border-color:var(--orange);color:var(--orange);background:rgba(232,115,74,.05)}
+
+    /* ── CONTACT ── */
+    .contact-sec{display:grid;grid-template-columns:1fr}
+    .contact-l{background:var(--blue);padding:72px 28px}
+    .contact-l-in{max-width:480px}
+    .contact-l h2{font-size:clamp(24px,3.5vw,34px);font-weight:700;color:var(--white);letter-spacing:-.02em;line-height:1.15;margin-bottom:36px}
+    .cd{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px}
+    .cd-ico{width:38px;height:38px;flex-shrink:0;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-size:16px}
+    .cd-info strong{display:block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
+    .cd-info span{font-size:13.5px;color:rgba(255,255,255,.78);line-height:1.5}
+    .cd-phone{font-family:'Poppins',sans-serif;font-size:26px;font-weight:800;color:var(--orange);letter-spacing:-.02em;display:block}
+    .contact-r{background:var(--white);padding:72px 28px}
+    .contact-r-in{max-width:480px;margin:0 auto}
+    .contact-r h2{font-size:22px;font-weight:700;color:var(--blue);letter-spacing:-.01em;margin-bottom:28px}
+    .f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+    .f-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+    .f-group label{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--fog)}
+    .f-group input,.f-group select,.f-group textarea{
+      padding:11px 14px;border:1px solid var(--mist);
+      font-family:'Inter',sans-serif;font-size:14px;color:var(--text);
+      background:var(--white);outline:none;-webkit-appearance:none;
+      transition:border-color .2s,box-shadow .2s;border-radius:0;
+    }
+    .f-group input:focus,.f-group select:focus,.f-group textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,61,92,.08)}
+    .f-group textarea{min-height:100px;resize:vertical}
+    .f-submit{
+      width:100%;padding:14px;background:var(--orange);color:var(--white);
+      border:none;cursor:pointer;
+      font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;
+      margin-top:6px;transition:background .2s,transform .2s;
+    }
+    .f-submit:hover{background:var(--orange2);transform:translateY(-1px)}
+    .f-submit:disabled{background:#2d7a4a;cursor:default;transform:none}
+    .f-note{font-size:11.5px;color:var(--fog);text-align:center;margin-top:10px}
+
+    /* ── FOOTER ── */
+    .site-footer{background:var(--ink);padding:60px 0 28px}
+    .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.05);margin-bottom:26px}
+    .fbrand h3{font-size:15px;font-weight:800;color:var(--white);margin-bottom:10px}
+    .fbrand p{font-size:13px;color:rgba(255,255,255,.38);line-height:1.65;margin-bottom:18px}
+    .fbrand-phone{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--orange);display:block;margin-bottom:5px;letter-spacing:-.02em}
+    .fbrand-addr{font-size:12px;color:rgba(255,255,255,.22)}
+    .fcol h4{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--white);margin-bottom:16px}
+    .fcol ul{list-style:none}
+    .fcol li{margin-bottom:8px}
+    .fcol a{font-size:13px;color:rgba(255,255,255,.38);transition:color .2s}
+    .fcol a:hover{color:var(--orange)}
+    .fh-item{font-size:13px;color:rgba(255,255,255,.38);margin-bottom:8px}
+    .fh-em{color:var(--orange)!important;font-weight:600;margin-top:12px}
+    .fbot{display:flex;flex-direction:column;gap:5px;align-items:center;text-align:center}
+    .fbot p{font-size:11px;color:rgba(255,255,255,.18)}
+
+    /* ── FAB ── */
+    .fab{
+      position:fixed;bottom:22px;right:20px;z-index:997;
+      width:56px;height:56px;border-radius:50%;
+      background:var(--orange);color:var(--white);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 18px rgba(232,115,74,.5);
+      transition:transform .2s;
+    }
+    .fab:hover{transform:scale(1.08)}
+    .fab svg{width:24px;height:24px}
+    .fab::before{
+      content:'';position:absolute;inset:-5px;
+      border-radius:50%;border:3px solid var(--orange);
+      opacity:0;animation:fabr 2.5s ease-out infinite;
+    }
+    @keyframes fabr{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.5);opacity:0}100%{transform:scale(1.5);opacity:0}}
+
+    /* ── REVEAL ── */
+    .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+    .rv.in{opacity:1;transform:translateY(0)}
+
+    /* ── RESPONSIVE ── */
+    @media(min-width:768px){
+      :root{--hh:72px}
+      .hdr-nap{display:flex}
+      .hero{grid-template-columns:60fr 40fr}
+      .hero-l{padding:80px 60px 80px 28px}
+      .hero-l-in{max-width:none}
+      .hero-r{padding:64px 40px}
+    }
+    @media(max-width:767px){
+      .hero-r{order:-1}
+      .btn-ghost{display:none}
+    }
+    @media(min-width:640px){
+      .awards-grid{grid-template-columns:repeat(2,1fr)}
+      .aw-item{border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+      .f-row{grid-template-columns:1fr 1fr}
+    }
+    @media(min-width:1024px){
+      .awards-grid{grid-template-columns:repeat(4,1fr)}
+      .aw-item{border-right:1px solid rgba(255,255,255,.07);border-bottom:none}
+      .aw-item:last-child{border-right:none}
+      .about-grid{grid-template-columns:2fr 3fr;gap:80px;align-items:start}
+      .contact-sec{grid-template-columns:1fr 1fr}
+      .contact-l{padding:88px 60px;display:flex;align-items:center}
+      .contact-l-in{max-width:none;width:100%}
+      .contact-r{padding:88px 60px;display:flex;align-items:center}
+      .contact-r-in{max-width:none;width:100%}
+      .cov-inner{grid-template-columns:1fr 2fr;align-items:start}
+      .fgrid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">⚠ &nbsp;DEMO SITE — NOT THE OFFICIAL WEBSITE OF E.P. OMEGA AIR CONDITIONING LLC</div>
+
+<!-- HEADER -->
+<header class="site-header" id="hdr">
+  <div class="hdr">
+    <div class="hdr-logo">
+      <span class="hdr-logo-name">E.P. Omega Air Conditioning LLC</span>
+      <span class="hdr-logo-sub">El Paso, TX · Licensed HVAC Professionals</span>
+    </div>
+    <div class="hdr-nap">
+      <span class="hdr-addr">13770 Nayarit Dr, El Paso TX 79928</span>
+      <a class="hdr-phone" href="tel:+19157037351">(915) 703-7351</a>
+    </div>
+    <a href="#contact" class="hdr-cta">Free Estimate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-l">
+    <div class="hero-l-in">
+      <div class="hero-eyebrow rv">El Paso, TX · Trane Certified Specialists</div>
+      <h1 class="rv">
+        El Paso's Only<br>
+        Three-Time Trane<br>
+        <em>Top Specialist.</em>
+      </h1>
+      <p class="hero-sub rv">Two owners. 44 combined years. Four industry awards. Adrian Del Hierro and Reymundo Resendez built E.P. Omega from the ground up — and Trane has recognized them for it three years running.</p>
+      <div class="hero-actions rv">
+        <a href="tel:+19157037351" class="btn-primary">
+          <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Call (915) 703-7351
+        </a>
+        <a href="#contact" class="btn-ghost">Get Free Estimate</a>
+      </div>
+      <div class="hero-trust rv">
+        <span class="h-badge">BBB A+ Rated</span>
+        <span class="h-badge">Trane Top Specialist × 3</span>
+        <span class="h-badge">Diamond CCE Dealer</span>
+        <span class="h-badge">24/7 Emergency</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-r">
+    <div>
+      <div class="hr-lbl">Call Us Anytime</div>
+      <a class="hr-phone" href="tel:+19157037351">(915) 703-7351</a>
+    </div>
+    <div class="hr-div"></div>
+    <div class="hr-hours">
+      <div class="hr-h"><div class="hl">Mon – Fri</div><div class="hv">8:00 AM – 5:00 PM</div></div>
+      <div class="hr-h"><div class="hl">Sat – Sun</div><div class="hv">9:00 AM – 12:00 PM</div></div>
+    </div>
+    <div class="hr-emg">
+      <div class="hr-dot"></div>
+      <p>24/7 Emergency Service<br>We answer. We respond.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="tick-item"><span class="tick-dot">·</span> BBB Accredited — A+ Rating</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2022</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2023</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2024</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Diamond Level Champion CCE Dealer</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Win Supply Diamond Award 2022</span>
+    <span class="tick-item"><span class="tick-dot">·</span> 44+ Years Combined Experience</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Residential &amp; Commercial HVAC</span>
+    <span class="tick-item"><span class="tick-dot">·</span> BBB Accredited — A+ Rating</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2022</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2023</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Trane Top Comfort Specialist 2024</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Diamond Level Champion CCE Dealer</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Win Supply Diamond Award 2022</span>
+    <span class="tick-item"><span class="tick-dot">·</span> 44+ Years Combined Experience</span>
+    <span class="tick-item"><span class="tick-dot">·</span> Residential &amp; Commercial HVAC</span>
+  </div>
+</div>
+
+<!-- SERVICES ACCORDION -->
+<section class="services-sec" id="services">
+  <div class="wrap">
+    <div class="svc-hd">
+      <div class="rv">
+        <div class="sec-label">What We Do</div>
+        <h2 class="sec-title">Full-Service HVAC<br>for El Paso</h2>
+      </div>
+      <p class="svc-hd-sub rv">Residential and commercial. New construction to emergency calls. Click any service to learn more.</p>
+    </div>
+    <div class="svc-list rv">
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">01</span><span class="svc-name">HVAC Installation</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Full system design and installation for residential and commercial properties — properly sized and specified for El Paso's extreme summer climate. Done right the first time.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">02</span><span class="svc-name">Refrigerated Air Conversions</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Complete upgrade from evaporative cooler to true refrigerated air conditioning. We handle the full conversion — assessment, removal, install, and system startup — end to end.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">03</span><span class="svc-name">HVAC Repair</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Fast, accurate diagnosis. Honest assessments. No unnecessary part replacements. Just what your system actually needs — from owners who've seen every failure mode over 44 combined years.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">04</span><span class="svc-name">Air Quality Improvement</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">El Paso's desert environment means dust, allergens, and dry air are real indoor concerns. We assess your situation and install solutions that make the air you breathe genuinely better year-round.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">05</span><span class="svc-name">Preventive Maintenance</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Seasonal tune-ups that protect your investment and catch problems early. Properly maintained systems run more efficiently through El Paso summers — and last significantly longer.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">06</span><span class="svc-name">Ductless Mini-Split Systems</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Flexible, efficient cooling and heating for additions, converted garages, offices, and any space without existing ductwork. Installed to manufacturer specs by certified technicians.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">07</span><span class="svc-name">New Construction HVAC</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">Full HVAC infrastructure for new builds — coordinating from rough-in to final inspection. E.P. Omega specializes in Retro HVAC and New Construction: two ends of the spectrum, done right.</p></div>
+      </div>
+
+      <div class="svc-item">
+        <button class="svc-btn" aria-expanded="false">
+          <div class="svc-btn-l"><span class="svc-num">08</span><span class="svc-name">24/7 Emergency Service</span></div>
+          <span class="svc-chevron" aria-hidden="true"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="svc-body"><p class="svc-desc">No HVAC in El Paso's summer heat is a genuine emergency. We answer. We respond. We resolve — around the clock, every day of the year, including weekends and holidays.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="awards-sec" id="awards">
+  <div class="wrap">
+    <div class="awards-top rv">
+      <div class="sec-label">Recognition</div>
+      <h2 class="sec-title">Four Awards.<br>Two Decades of Work.</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="aw-item rv">
+        <div class="aw-idx">01 / 04</div>
+        <div class="aw-name">BBB Accredited Business — A+ Rating</div>
+        <div class="aw-body">Verified by the Better Business Bureau for ethical practices, customer responsiveness, and consistent service quality. Their highest rating — maintained, not inherited.</div>
+        <span class="aw-pill">Active &amp; Verified</span>
+      </div>
+      <div class="aw-item rv">
+        <div class="aw-idx">02 / 04</div>
+        <div class="aw-name">Trane Top Comfort Specialist — 3 Consecutive Years</div>
+        <div class="aw-body">Trane awards this only to dealers who exceed rigorous technical certification, installation quality benchmarks, and customer satisfaction standards. Three years running in El Paso.</div>
+        <span class="aw-pill">3 Consecutive Years</span>
+      </div>
+      <div class="aw-item rv">
+        <div class="aw-idx">03 / 04</div>
+        <div class="aw-name">Diamond Level Champion CCE Dealer</div>
+        <div class="aw-body">The highest tier in the Comfort &amp; Commercial Excellence program — recognizing sustained leadership in technical mastery, sales performance, and customer loyalty year over year.</div>
+        <span class="aw-pill">Diamond Level — Top Tier</span>
+      </div>
+      <div class="aw-item rv">
+        <div class="aw-idx">04 / 04</div>
+        <div class="aw-name">2022 Win Supply Diamond Award</div>
+        <div class="aw-body">Awarded for outstanding contractor performance and partnership excellence — placing E.P. Omega among the top contractors in Win Supply's national network.</div>
+        <span class="aw-pill">2022 Winner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="rv">
+        <span class="big-n" aria-hidden="true">44</span>
+        <div class="big-n-lbl">Combined Years</div>
+        <div class="big-n-sub">Two owners. One standard.</div>
+        <div class="num-stats">
+          <div><div class="ns-v" data-count="3">0</div><div class="ns-l">Trane Top<br>Specialist Awards</div></div>
+          <div><div class="ns-v" data-count="4">0</div><div class="ns-l">Total Industry<br>Awards</div></div>
+          <div><div class="ns-v">24/7</div><div class="ns-l">Emergency<br>Service</div></div>
+        </div>
+        <div class="owner-chips">
+          <div class="owner-chip">
+            <div class="oc-av">AD</div>
+            <div class="oc-info"><strong>Adrian Del Hierro</strong><span>Co-Owner &amp; Lead Technician</span></div>
+          </div>
+          <div class="owner-chip">
+            <div class="oc-av">RR</div>
+            <div class="oc-info"><strong>Reymundo Resendez</strong><span>Co-Owner &amp; Lead Technician</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="sec-label rv">The Story</div>
+        <h2 class="sec-title rv" style="margin-bottom:28px">Built by Two Owners Who Know This Trade Inside Out</h2>
+        <p class="rv"><strong>Adrian Del Hierro and Reymundo Resendez</strong> didn't build E.P. Omega Air Conditioning on marketing slogans. They built it on 44+ combined years of doing the actual work — on rooftops in El Paso summers, in commercial equipment rooms, troubleshooting systems no one else could figure out.</p>
+        <p class="rv">That history shows in every decision the company makes: the equipment they specify, the honesty of their assessments, the standard they hold every technician to. When you call E.P. Omega, you're getting a crew accountable to two owners who've been on-site themselves for decades — not a franchise where quality varies by crew.</p>
+        <p class="rv">Trane doesn't award Top Comfort Specialist three consecutive years to companies that cut corners. That designation requires meeting rigorous technical benchmarks and customer satisfaction standards year after year. E.P. Omega has done it three times. That's not marketing. That's a record.</p>
+        <div class="about-quote rv">
+          <p>"We specialize in Retro HVAC and New Construction — two ends of the spectrum that require completely different skill sets. Most companies do one well. We do both, and we've done both for decades."</p>
+          <cite>— Adrian Del Hierro &amp; Reymundo Resendez, Co-Owners</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="t-sec" id="reviews">
+  <div class="wrap">
+    <div class="t-hd rv">
+      <div class="sec-label">What El Paso Says</div>
+      <h2 class="sec-title">Our Customers,<br>In Their Words</h2>
+    </div>
+    <div class="t-slider rv" id="tSlider">
+      <div class="t-slide active">
+        <div class="t-stars">★★★★★</div>
+        <span class="t-qmark">"</span>
+        <p class="t-text">Our AC went out on a 104° Saturday night. A tech arrived within the hour and had us back up and running by midnight. Completely professional, fast, and the price was completely fair. These guys are the real deal.</p>
+        <div class="t-attr">Maria L. — <span>East El Paso Homeowner · Emergency A/C Repair</span></div>
+      </div>
+      <div class="t-slide">
+        <div class="t-stars">★★★★★</div>
+        <span class="t-qmark">"</span>
+        <p class="t-text">I got three quotes for my refrigerated air conversion. E.P. Omega gave the most detailed proposal, no upselling, just honest work. The install was clean and on time — the system has run perfectly through two El Paso summers.</p>
+        <div class="t-attr">James T. — <span>West El Paso · Refrigerated A/C Conversion</span></div>
+      </div>
+      <div class="t-slide">
+        <div class="t-stars">★★★★★</div>
+        <span class="t-qmark">"</span>
+        <p class="t-text">We've used E.P. Omega for our commercial building for three years — maintenance, two emergency calls, one full replacement. Every time: on time, honest, and the work holds. I won't call another HVAC company in El Paso. Period.</p>
+        <div class="t-attr">Roberto C. — <span>Commercial Property Owner · El Paso TX</span></div>
+      </div>
+    </div>
+    <div class="t-dots" id="tDots">
+      <div class="t-dot active" onclick="goSlide(0)"></div>
+      <div class="t-dot" onclick="goSlide(1)"></div>
+      <div class="t-dot" onclick="goSlide(2)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="cov-sec">
+  <div class="wrap">
+    <div class="cov-inner">
+      <div class="cov-text rv">
+        <h2>Serving Greater El Paso</h2>
+        <p>Residential and commercial customers across El Paso and surrounding communities. Not sure if we reach you? Call — we'll tell you straight.</p>
+      </div>
+      <div class="cov-tags rv">
+        <span class="cov-tag">East El Paso</span>
+        <span class="cov-tag">West El Paso</span>
+        <span class="cov-tag">Northeast El Paso</span>
+        <span class="cov-tag">Central El Paso</span>
+        <span class="cov-tag">Lower Valley</span>
+        <span class="cov-tag">Upper Valley</span>
+        <span class="cov-tag">Horizon City</span>
+        <span class="cov-tag">Socorro</span>
+        <span class="cov-tag">Clint</span>
+        <span class="cov-tag">Anthony</span>
+        <span class="cov-tag">Fort Bliss Area</span>
+        <span class="cov-tag">Canutillo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="contact-l">
+    <div class="contact-l-in">
+      <h2>Ready to Talk?<br>We're Easy to Reach.</h2>
+      <div class="cd">
+        <div class="cd-ico">📞</div>
+        <div class="cd-info"><strong>Phone / Emergency</strong><a class="cd-phone" href="tel:+19157037351">(915) 703-7351</a></div>
+      </div>
+      <div class="cd">
+        <div class="cd-ico">📍</div>
+        <div class="cd-info"><strong>Address</strong><span>13770 Nayarit Dr<br>El Paso, TX 79928</span></div>
+      </div>
+      <div class="cd">
+        <div class="cd-ico">🕐</div>
+        <div class="cd-info"><strong>Business Hours</strong><span>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat–Sun: 9:00 AM – 12:00 PM<br>Emergencies: 24/7 — always</span></div>
+      </div>
+      <div class="cd">
+        <div class="cd-ico">💬</div>
+        <div class="cd-info"><strong>Facebook</strong><span><a href="https://facebook.com/epomegaac" target="_blank" rel="noopener" style="color:var(--orange);font-weight:600">@epomegaac</a> · 5,094 followers</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-r">
+    <div class="contact-r-in">
+      <h2>Get a Free Estimate</h2>
+      <div class="f-row">
+        <div class="f-group"><label>Your Name</label><input type="text" id="f-name" placeholder="John Smith"></div>
+        <div class="f-group"><label>Phone Number</label><input type="tel" id="f-phone" placeholder="(915) 000-0000"></div>
+      </div>
+      <div class="f-group">
+        <label>Service Needed</label>
+        <select id="f-service">
+          <option value="">Select a service...</option>
+          <option>HVAC Installation</option>
+          <option>Refrigerated Air Conversion</option>
+          <option>HVAC Repair</option>
+          <option>Air Quality Improvement</option>
+          <option>Preventive Maintenance</option>
+          <option>Ductless Mini-Split System</option>
+          <option>New Construction HVAC</option>
+          <option>Emergency Service</option>
+          <option>Commercial HVAC</option>
+          <option>Not sure — I need an assessment</option>
+        </select>
+      </div>
+      <div class="f-group">
+        <label>Message (optional)</label>
+        <textarea id="f-msg" placeholder="Tell us about your situation — system age, symptoms, or anything that might help..."></textarea>
+      </div>
+      <button class="f-submit" id="fsub" type="button" onclick="doSend()">Send Request →</button>
+      <p class="f-note">No spam. No commitment. Just an honest conversation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <h3>E.P. Omega Air Conditioning LLC</h3>
+        <p>Trane Top Comfort Specialist (3 consecutive years). BBB A+. Diamond CCE Dealer. Serving El Paso with 44+ combined years of residential and commercial HVAC expertise.</p>
+        <a class="fbrand-phone" href="tel:+19157037351">(915) 703-7351</a>
+        <span class="fbrand-addr">13770 Nayarit Dr, El Paso, TX 79928</span>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">HVAC Installation</a></li>
+          <li><a href="#services">Refrigerated Air Conversion</a></li>
+          <li><a href="#services">HVAC Repair</a></li>
+          <li><a href="#services">Air Quality</a></li>
+          <li><a href="#services">Preventive Maintenance</a></li>
+          <li><a href="#services">Ductless Mini-Splits</a></li>
+          <li><a href="#services">New Construction</a></li>
+          <li><a href="#services">Emergency Service 24/7</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Certifications</h4>
+        <ul>
+          <li><a href="#awards">BBB Accredited A+</a></li>
+          <li><a href="#awards">Trane Top Comfort Specialist</a></li>
+          <li><a href="#awards">Diamond CCE Dealer</a></li>
+          <li><a href="#awards">Win Supply Diamond Award</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Hours</h4>
+        <div class="fh-item">Mon – Fri<br><span style="color:rgba(255,255,255,.25)">8:00 AM – 5:00 PM</span></div>
+        <div class="fh-item">Sat – Sun<br><span style="color:rgba(255,255,255,.25)">9:00 AM – 12:00 PM</span></div>
+        <div class="fh-item fh-em">Emergencies<br>(915) 703-7351 · 24/7</div>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© 2024 E.P. Omega Air Conditioning LLC · All rights reserved · El Paso, TX 79928</p>
+      <p>Demo site built to illustrate web design services · Not the official website of E.P. Omega Air Conditioning LLC</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB -->
+<a href="tel:+19157037351" class="fab" aria-label="Call E.P. Omega Air Conditioning">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+</a>
+
+<script>
+  /* SCROLL REVEAL */
+  const ro = new IntersectionObserver(es => {
+    es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); }});
+  },{threshold:.1});
+  document.querySelectorAll('.rv').forEach(el => ro.observe(el));
+
+  /* HEADER */
+  const hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 24), {passive:true});
+
+  /* SERVICE ACCORDION */
+  document.querySelectorAll('.svc-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.svc-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.svc-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.svc-btn').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  /* COUNTER ANIMATION */
+  const co = new IntersectionObserver(es => {
+    es.forEach(e => {
+      if(e.isIntersecting && !e.target.dataset.counted){
+        e.target.dataset.counted = '1';
+        const tgt = parseInt(e.target.dataset.count);
+        let cur = 0;
+        const timer = setInterval(() => {
+          cur = Math.min(cur + 1, tgt);
+          e.target.textContent = cur + (tgt === 3 ? '×' : '');
+          if(cur >= tgt) clearInterval(timer);
+        }, 80);
+      }
+    });
+  },{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
+
+  /* TESTIMONIAL SLIDER */
+  let cur = 0;
+  const slides = document.querySelectorAll('.t-slide');
+  const dots = document.querySelectorAll('.t-dot');
+  let auto = setInterval(() => goSlide((cur + 1) % slides.length), 5800);
+
+  function goSlide(idx){
+    slides[cur].classList.remove('active');
+    dots[cur].classList.remove('active');
+    cur = idx;
+    slides[cur].classList.add('active');
+    dots[cur].classList.add('active');
+    clearInterval(auto);
+    auto = setInterval(() => goSlide((cur + 1) % slides.length), 5800);
+  }
+
+  /* FORM */
+  function doSend(){
+    const n = document.getElementById('f-name').value.trim();
+    const p = document.getElementById('f-phone').value.trim();
+    if(!n || !p){ alert('Please enter your name and phone number.'); return; }
+    const btn = document.getElementById('fsub');
+    btn.textContent = "✓ Request Sent — We'll Call You Soon!";
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>
